@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Salotti Run</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="global.css">
+  <style>
+    /* Estilos CSS aqui */
+  </style>
+</head>
+
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="myModal">
+    <p id="modalText"></p>
+    <p>Pressione F5 para reiniciar</p>
+    <a href="/"><b>Voltar para o menu</b></a>
+  </div>
+  <script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Constantes
+    const parallaxSpeed = 0.2;
+    const obstacleWidth = 30;
+    const obstacleHeight = 30;
+    const obstacleSpeed = 10;
+
+    // ... Outras constantes ...
+
+    function loadImage(src) {
+      // Função para carregar imagens
+    }
+
+    async function loadImages() {
+      // Função para carregar todas as imagens necessárias
+    }
+
+    async function startGame() {
+      // Função principal do jogo
+    }
+
+    function jump(event) {
+      // Função para lidar com o pulo do jogador
+    }
+
+    // ... Outras funções de controle de teclado ...
+
+    function resetGame() {
+      // Função para reiniciar o jogo
+    }
+
+    function displayModal(message) {
+      // Função para exibir o modal
+    }
+
+    function updateGameArea() {
+      // Função para atualizar a área do jogo
+    }
+
+    function checkCollisions() {
+      // Função para verificar colisões
+    }
+
+    // ... Outras funções ...
+
+    document.addEventListener('keydown', jump);
+    document.addEventListener('keydown', sprint);
+    document.addEventListener('keyup', stopSprint);
+    document.addEventListener('keydown', moveLeft);
+    document.addEventListener('keydown', moveRight);
+    document.addEventListener('keyup', stopMove);
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    resetGame();
+    loadImages().then(startGame);
+  </script>
+</body>
+
+</html>
